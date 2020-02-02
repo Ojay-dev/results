@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Login</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="res/css/ice.css">
+			<link rel="stylesheet" type="text/css" href="res/css/bs.css">
+			<link rel="stylesheet" type="text/css" href="res/css/style.css">
+			<script type="text/javascript" src="res/js/jquery.js"></script>
+			<script type="text/javascript" src="res/js/bs.js"></script>
+		</head>
+		<body>
+			<div class="container">
+				<form action="javascript:void(0)" class="login_form">
+					<div class="loading">
+						<div class="ball"></div> <div class="ball"></div> <div
+						class="ball"></div> <div class="ball"></div> <div class="ball"></div>
+						<div class="ball"></div> <div class="ball"></div>
+						<h2>Loading...</h2>
+					</div>
+					<div class="floating_img">
+						<img class="floating_img" src="res/images/default.png">
+						<h1>Department</h1>
+					</div>
+					<p class="info">Please Login</p>
+					<input class="login_input" type="text" name="username" placeholder="Username or Email" required/>
+					<input class="login_input" type="password" name="password" placeholder="Password" required/>
+					<input type="submit" class="login_submit" name="submit" value="login" required/>
+					<p class="form_text">Forgot password? <a class="form_link" href="javascript:void(0)">Reset</a></p>
+				</form>
+			</div>
+			<script type="text/javascript" src="res/js/ice.js"></script>
+			<script type="text/javascript">
+				window.onclick = function () {
+					$('.loading').toggleClass('load');
+				}
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Admin</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="res/css/bs.css">
+			<link rel="stylesheet" type="text/css" href="res/css/fa.css">
+			<link rel="stylesheet" type="text/css" href="res/css/style.css">
+			<script type="text/javascript" src="res/js/jquery.js"></script>
+			<script type="text/javascript" src="res/js/bs.js"></script>
+		</head>
+		<body>
+			<header>
+				<div class="container">
+					<div class="identity">
+						<img class="logo" src="res/images/default.png">
+						<h1 class="title">Department</h1>
+						<a href="javascript:admin_sidebar.toggle()" class="sidebar_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+			</header>
+			<div class="side_bar">
+				<div class="container">
+					<a href="javascript:admin_sidebar.toggle()" class="close_btn">&times;</a>
+					<div class="intro">
+						<div class="prf_img" style="background: url('file:///C:/keyz/HTML%20Files/sabicode.png'); background-size: contain; background-position: 0% 50%; background-repeat: no-repeat;"></div>
+						<h5>Howdy, John!</h5>
+					</div>
+					<ul>
+						<li><a href="#"><i class="fa fa-home"></i> Dashboard</a></li>
+						<li class="active"><a href="#"><i class="fa fa-table"></i> Results</a></li>
+						<li><a href="#"><i class="fa fa-graduation-cap"></i> Lecturers</a></li>
+						<li><a href="#"><i class="fa fa-book"></i> Courses</a></li>
+						<li><a href="#"><i class="fa fa-users"></i> Students</a></li>
+						<li><a href="#"><i class="fa fa-bell"></i><sub class="notification_count">262</sub> Notifications</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i><sub class="notification_count">26</sub> Messages</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="main_content" class="container">
+				<!--div id="dashboard">
+					<div id="graph" style="width: 100%;
+					min-height: 200px;"></div>
+					<section>
+						<h5 class="title">Section Title</h5>
+					</section>
+				</div-->
+				<!--div id="students"-->
+					<!--ul class="tiles">
+						<li><a href="javascript:courses.load('mathematics')">Mathematics</a></li>
+						<li><a href="javascript:courses.load('physics')">Physics</a></li>
+						<li><a href="javascript:courses.load('chemistry')">Chemistry</a></li>
+						<li><a href="javascript:courses.load('biology')">Biology</a></li>
+					</ul-->
+					<!--div class="col-md-3 col-xs-6">
+						<a href="javascript:void(0)"><div class="prf_img" style="background: url('res/images/default.png'); background-size: contain; background-repeat: no-repeat;"></div>
+						<h5>Dr. Student's Name</h5></a>
+					</div-->
+					<!--
+						Clicking a student above leads below
+							|		|
+							\		/
+							 \	   /
+							  \	  /
+							   \ /
+					-->
+
+					<!--div class="lecturer">
+						<div class="prf_img" style="background: url('res/images/default.png'); background-size: contain; background-repeat: no-repeat;"></div>
+						<h5>Dr. Student's Name</h5>
+						<div class="courses">
+							<h5>Courses Registered</h5>
+							<table class="table hover">
+								<thead>
+								  	<tr>
+								    	<th scope="col">Code</th>
+								    	<th scope="col">Title</th>
+								    	<th scope="col">Unit</th>
+								  	</tr>
+								</thead>
+								<tbody>
+								    <tr>
+								      	<td>Mat 402</td>
+								      	<td>Partial Differential Equations</td>
+								      	<td>3</td>
+								    </tr>
+								    <tr>
+								    	<th scope="row">Total</th>
+								    	<td></td>
+								    	<td>3</td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div-->
+				<!--/div-->
+				<!--div id="lecturers" class="row"-->
+					<!--div class="col-md-3 col-xs-6">
+						<a href="javascript:void(0)"><div class="prf_img" style="background: url('res/images/default.png'); background-size: contain; background-repeat: no-repeat;"></div>
+						<h5>Dr. Lecturer's Name</h5></a>
+					</div-->
+					<!--div class="lecturer">
+						<div class="prf_img" style="background: url('res/images/default.png'); background-size: contain; background-repeat: no-repeat;"></div>
+						<h5>Dr. Lecturer's Name</h5>
+						<div class="courses">
+							<h5>Courses Assigned</h5>
+							<form class="form-inline mb-3" action="javascript:lecturer.assign()">
+								<div class="form-group mb-2 mr-2">
+									<select class="custom-select">
+										<option selected>Select a course</option>
+										<option value="mat 402">Mat 402</option>
+									</select>
+								</div>
+								<button class="btn btn-primary mb-2" type="submit" name="submit" value="assing course"><i class="fa fa-plus"></i> Assign Course</button>
+							</form>
+							<table class="table hover">
+								<thead>
+								  	<tr>
+								    	<th scope="col">Code</th>
+								    	<th scope="col">Title</th>
+								    	<th scope="col">Level</th>
+								    	<th scope="col">Unassign</th>
+								  	</tr>
+								</thead>
+								<tbody>
+								    <tr>
+								      	<td>Mat 402</td>
+								      	<td>Partial Differential Equations</td>
+								      	<td>400</td>
+								      	<td><a  class="trash" href="javascript:courses.delete('mat 402')"><i class="fa fa-trash"></i></a></td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div-->
+				<!--/div-->
+				<!--div id="courses">
+					<ul class="tiles">
+						<li><a href="javascript:courses.load('mathematics')">Mathematics</a></li>
+						<li><a href="javascript:courses.load('physics')">Physics</a></li>
+						<li><a href="javascript:courses.load('chemistry')">Chemistry</a></li>
+						<li><a href="javascript:courses.load('biology')">Biology</a></li>
+					</ul>
+					<table class="table hover">
+						<thead>
+						  	<tr>
+						    	<th scope="col">Code</th>
+						    	<th scope="col">Title</th>
+						    	<th scope="col">Level</th>
+						    	<th scope="col">Unit</th>
+						    	<th scope="col">Delete</th>
+						  	</tr>
+						</thead>
+						<tbody>
+						    <tr>
+						      	<td>Mat 402</td>
+						      	<td>Partial Differential Equations</td>
+						      	<td>400</td>
+						      	<td>3</td>
+						      	<td><a  class="trash" href="javascript:courses.delete('mat 402')"><i class="fa fa-trash"></i></a></td>
+						    </tr>
+						    <form class="table_form" action="javascript:courses.add()">
+						    	<tr>
+						    		<td><input type="text" name="code" required/></td>
+						    		<td><input type="text" name="title" required/></td>
+						    		<td><input type="text" name="level" required/></td>
+						    		<td><input type="text" name="unit" required/></td>
+						    		<td><input type="submit" name="submit" value="Add Course" required/></td>
+						    	</tr>
+						    </form>
+						</tbody>
+					</table>
+				</div-->
+			</div>
+			<script type="text/javascript" src="res/js/script.js"></script>
+			<script type="text/javascript">
+				/*window.onclick = function () {
+					$('.side_bar').toggleClass('show');
+				}*/
+			</script>
+		</body>
+	</html>
