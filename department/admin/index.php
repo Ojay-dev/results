@@ -1,4 +1,4 @@
-<?php //require '../res/conn.php'; ?>
+<?php require '../res/conn.php'; ?>
 <?php
 	/*if(isset($_SESSION['user_id']) && $_SESSION['user_id']){
 		header('Location: '.BASE_URL.'admin/admin_panel.php');
